@@ -37,6 +37,7 @@ scene.add(camera)
 // Renderer
 const canvas = document.querySelector('.webgl')
 const renderer = new THREE.WebGLRenderer({ canvas })
+renderer.setPixelRatio(2)
 renderer.setSize(sizes.width, sizes.height)
 renderer.render(scene, camera)
 
